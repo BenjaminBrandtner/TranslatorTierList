@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateChangeSuggestionsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create(
+            'change_suggestions',
+            function (Blueprint $table)
+            {
+                $table->id();
+                $table->foreignId('translation_channel_id')->references('id')->on('translation_channels');
+                $table->enum('tier', ['S', 'A', 'B', 'C'])->nullable();
+                $table->boolean('good_editor')->nullable();
+                $table->timestamps();
+            }
+        );
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('change_suggestions');
+    }
+}

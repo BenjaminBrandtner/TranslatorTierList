@@ -1,0 +1,8 @@
+watch:
+  directories:
+    - app
+    - database
+    - tests
+  fileMask: '*.php'
+phpunit:
+  arguments: '--printer NunoMaduro\Collision\Adapters\Phpunit\Printer'

@@ -1,0 +1,42 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto:wght@300;400&display=swap&family=Libre+Baskerville:wght@700&display=swap');
+
+:root {
+    --s-tier: #01B0F1;
+    --a-tier: #00AF50;
+    --b-tier: #92D14F;
+    --c-tier: #FED966;
+    --u-tier: #6A6A6A;
+
+    --border-grey: #707070;
+    --border-black: #000000;
+
+    --bright-1: #EFEFEF; /*text on dark*/
+    --dark-1: #101010; /*text on bright, background*/
+    --dark-2: #1E1E1E; /*tier boxes*/
+    --dark-3: #2C2C2C; /*nav buttons background*/
+    --dark-4: #414141; /*nav buttons hover, floating nav buttons*/
+    --dark-5: #515151; /*floating nav buttons hover*/
+}
+
+.font-noto {
+    font-family: 'Noto Serif JP', serif;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-baskerville {
+    font-family: 'Libre Baskerville', serif;
+}
+
+/*Dev Helper*/
+.outline {
+    outline: solid hotpink 1px;
+}

@@ -1,0 +1,65 @@
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "N2jEynfpgaHBZl4BXF4E3SwgxKw",
+    "items": [
+        {
+            "kind": "youtube#video",
+            "etag": "9gVZx-TYTZG6qGjH9lOtYA8pUn0",
+            "id": "CfY_6NQSK8g",
+            "snippet": {
+                "publishedAt": "2015-07-24T09:48:34Z",
+                "channelId": "UC35ZxV8dz91YgXnhCU9s0Vw",
+                "title": "Rayman 3 (GBA) OST - Vertigo Wastes",
+                "description": "Haunted Dreams - Vertigo Wastes (Thanks to Ren Ternas for pointing out that I missed this one!)\n\nCheck out the playlist with every single Rayman 3 (GBA) Track:\nhttp://www.youtube.com/playlist?list=PL1527E3923FCF3BF2",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/CfY_6NQSK8g/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/CfY_6NQSK8g/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/CfY_6NQSK8g/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/CfY_6NQSK8g/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    }
+                },
+                "channelTitle": "Hiandbye95",
+                "tags": [
+                    "Rayman",
+                    "Hoodlum",
+                    "Havoc",
+                    "Ubisoft",
+                    "Nintendo",
+                    "GBA",
+                    "Gameboy",
+                    "Advance",
+                    "Original",
+                    "Soundtrack",
+                    "Music",
+                    "10th",
+                    "Anniversary"
+                ],
+                "categoryId": "20",
+                "liveBroadcastContent": "none",
+                "localized": {
+                    "title": "Rayman 3 (GBA) OST - Vertigo Wastes",
+                    "description": "Haunted Dreams - Vertigo Wastes (Thanks to Ren Ternas for pointing out that I missed this one!)\n\nCheck out the playlist with every single Rayman 3 (GBA) Track:\nhttp://www.youtube.com/playlist?list=PL1527E3923FCF3BF2"
+                }
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 1
+    }
+}
