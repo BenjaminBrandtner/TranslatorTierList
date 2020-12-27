@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Api\ChangeSuggestionController;
 use App\Http\Controllers\Api\TranslationChannelController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,20 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/translation-channels', [TranslationChannelController::class, 'index']);
 
-Route::get(
-    '/translation-channels/{translationChannel}/change-suggestions',
-    [ChangeSuggestionController::class, 'index']
-);
-Route::post(
-    '/translation-channels/{translationChannel}/change-suggestions',
-    [ChangeSuggestionController::class, 'store']
-);
-
-Route::get(
-    '/{any}',
-    function ()
-    {
-        abort(404, 'Route not found');
-    }
-);
-
+Route::fallback(function () { abort(404, 'Route not found'); });

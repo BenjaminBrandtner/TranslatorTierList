@@ -13,6 +13,8 @@ class RoutingTest extends TestCase
     {
         $this->get('/asdf')
              ->assertViewIs('index');
+        $this->get('/asdf/asdf')
+             ->assertViewIs('index');
     }
 
     /**
@@ -21,6 +23,10 @@ class RoutingTest extends TestCase
     public function nonexistantApiRoutesReturn404()
     {
         $this->getJson('/api/asdf')
+             ->assertNotFound()
+             ->assertJson([]);
+
+        $this->getJson('/api/asdf/asdf')
              ->assertNotFound()
              ->assertJson([]);
     }
