@@ -38,7 +38,6 @@ class AddingTranslationChannelsTest extends TestCase
      */
     public function youCanAddChannelsByVideoUrl()
     {
-        // TODO: does this really need to be a feature? if so, maybe in another command
         AddTranslationChannel::run('https://youtu.be/CfY_6NQSK8g', null, null);
         AddTranslationChannel::run('https://www.youtube.com/watch?v=CfY_6NQSK8g&feature=youtu.be', null, null, true);
 

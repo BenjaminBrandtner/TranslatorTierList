@@ -10,6 +10,8 @@ class ChangeSuggestionTest extends TestCase
 {
     use RefreshDatabase;
 
+    // TODO: new logic
+
     /**
      * @test
      */

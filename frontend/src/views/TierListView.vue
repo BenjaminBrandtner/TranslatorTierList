@@ -38,13 +38,13 @@
         {
           tier: 'A',
           name: 'Good Translation',
-          explanation: 'A good translation may have small grammatical errors or sound slightly off, but still <b>easily gets the point across.</b>',
+          explanation: 'A good translation <b>has no mistranslations</b>. It may have small grammatical errors or sound slightly off, but still <b>easily gets the point across.</b>',
           channels: tieredChannels['A']
         },
         {
           tier: 'B',
           name: 'Okay Translation',
-          explanation: 'An okay translation <b>sounds unnatural</b> or is occasionally <b>hard to understand.</b>',
+          explanation: 'An okay translation <b>has mistranslations</b> or it <b>sounds unnatural</b> and is occasionally <b>hard to understand.</b>',
           channels: tieredChannels['B']
         },
         {

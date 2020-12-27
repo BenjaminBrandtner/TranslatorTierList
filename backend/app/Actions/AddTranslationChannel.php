@@ -24,7 +24,7 @@ class AddTranslationChannel
      * @throws InvalidTierException
      * @throws InvalidUrlException
      *
-     * Add a Translationchannel to the database, after checking it exists on Youtube. Designed to be used from console, perhaps from Nova.
+     * Add a Translationchannel to the database, after checking it exists on Youtube. Designed to be used from command line, and perhaps later from Nova.
      */
     public static function run(string $url, ?string $tier, ?bool $goodEditor, bool $force = false)
     {

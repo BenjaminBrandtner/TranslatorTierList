@@ -12,6 +12,8 @@ use Tests\TestCase;
 
 class YoutubeApiTest extends TestCase
 {
+    //These tests were writtern to learn and document how to use the Youtube API.
+
     protected Google_Service_YouTube $service;
 
     /**
@@ -54,7 +56,7 @@ class YoutubeApiTest extends TestCase
      * @test
      * @group ThirdPartyApi
      */
-    public function fetchMultipleChannelNamesFromUrlsUsingGoogleClient()
+    public function fetchMultipleChannelsFromUrlsUsingGoogleClient()
     {
         $response = $this->service->channels->listChannels(
             'snippet,statistics',
@@ -64,13 +66,12 @@ class YoutubeApiTest extends TestCase
                     'UCdJdEguB1F1CiYe7OEi3SBg',
                 ],
             ]
-);
+        );
 
         $channels = $response->getItems();
-        $name = $response->getItems()[0]->getSnippet()->getTitle();
-
         $this->assertCount(2, $channels);
-        $this->assertEquals('Hiandbye95', $name);
+        //specifying the same id twice is silently ignored
+        //the order of the channels in the response are indeterminate
     }
 
     /**
@@ -101,7 +102,8 @@ class YoutubeApiTest extends TestCase
         $subscriberCount = $statistics->getSubscriberCount();
 
         $this->assertFalse($subscriberCountIsHidden);
-        $this->assertIsInt((int)$subscriberCount); //subscriber count is 0 if hidden by the channel owner
+        $this->assertIsInt((int)$subscriberCount);
+        //subscriber count is null if hidden by the channel owner
     }
 
     /**
@@ -127,6 +129,7 @@ class YoutubeApiTest extends TestCase
         $response = $this->service->channels->listChannels('snippet,statistics', ['forUsername' => 'hiandbye95']);
 
         $this->assertSame('UC35ZxV8dz91YgXnhCU9s0Vw', $response->getItems()[0]->id);
+        //this isn't very reliable or helpful, because a channel's display name can be different from the username, or channels might not even have a username
     }
 
     /**

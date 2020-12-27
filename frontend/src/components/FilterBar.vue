@@ -19,7 +19,7 @@
             </select>
         </label>
         <label class="border-t border-transparent">
-            Great Editor <input v-model="filters.greatEditor" type="checkbox"></label>
+            Great Editor 🎬 <input v-model="filters.greatEditor" type="checkbox"></label>
         <label>
             Sorting
             <select v-model="filters.sorting">

@@ -8,11 +8,11 @@
         into different <span class="text-primary">tiers</span>.
     </p>
 
-    <h2 class="font-medium text-2xl mt-3">Neue Überschrift</h2>
+    <h2 class="font-medium text-2xl mt-3">Extra Features</h2>
     <ul class="ml-6 list-disc">
         <li>
             Channels that go above and beyond with
-            <span class="text-primary">video editing</span> are marked with this symbol: 🎬. <br>
+            <span class="text-primary">video editing</span> are marked with this symbol:&nbsp;🎬. <br>
         </li>
         <li>
             If a channel mostly posts videos about one specific VTuber or group of VTubers, it is indicated as their
