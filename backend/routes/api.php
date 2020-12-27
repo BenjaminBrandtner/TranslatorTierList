@@ -19,5 +19,6 @@ Route::get('/translation-channels', [TranslationChannelController::class, 'index
 Route::post('/translation-channels/search', [TranslationChannelController::class, 'search']);
 
 Route::post('/change-suggestions', [ChangeSuggestionController::class, 'store']);
+Route::post('/change-suggestions/search', [ChangeSuggestionController::class, 'search']);
 
 Route::fallback(function () { abort(404, 'Route not found'); });

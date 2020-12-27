@@ -17,7 +17,7 @@ class ChangeSuggestionResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'translationChannelId' => $this->translation_channel_id,
+            'channelId' => $this->channel_id,
             'tier' => $this->tier,
             'goodEditor' => $this->good_editor,
         ];

@@ -14,11 +14,6 @@ use Illuminate\Validation\Rule;
 
 class ChangeSuggestionController extends Controller
 {
-    public function index(TranslationChannel $translationChannel)
-    {
-        return ChangeSuggestionResource::collection($translationChannel->changeSuggestions);
-    }
-
     public function store(Request $request)
     {
         $validated = $request->validate(
@@ -40,5 +35,23 @@ class ChangeSuggestionController extends Controller
         );
 
         return Response::json([], 201);
+    }
+
+    public function search(Request $request)
+    {
+        $validated = $request->validate(
+            [
+                'url' => ['required', new YoutubeChannelUrl()],
+            ]
+        );
+
+        $channelId = YoutubeClient::getChannelIdFromUrl($validated['url']);
+        $changeSuggestions = ChangeSuggestion::whereChannelId($channelId)->get();
+
+        if ($changeSuggestions->isEmpty()) {
+            abort(404);
+        }
+
+        return ChangeSuggestionResource::collection($changeSuggestions);
     }
 }

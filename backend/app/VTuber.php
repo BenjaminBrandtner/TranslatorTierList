@@ -12,11 +12,8 @@ use Illuminate\Support\Carbon;
  * App\VTuber
  *
  * @property int $id
- * @property string $name_romaji
- * @property string|null $name_japanese
- * @property array|null $keywords
- * @property string|null $icon
- * @property string|null $short_name
+ * @property string $name
+ * @property string $focus_name
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property-read Collection|\App\TranslationChannel[] $focusedOnByComputed
@@ -27,12 +24,9 @@ use Illuminate\Support\Carbon;
  * @method static Builder|VTuber newQuery()
  * @method static Builder|VTuber query()
  * @method static Builder|VTuber whereCreatedAt($value)
- * @method static Builder|VTuber whereIcon($value)
+ * @method static Builder|VTuber whereFocusName($value)
  * @method static Builder|VTuber whereId($value)
- * @method static Builder|VTuber whereKeywords($value)
- * @method static Builder|VTuber whereNameJapanese($value)
- * @method static Builder|VTuber whereNameRomaji($value)
- * @method static Builder|VTuber whereShortName($value)
+ * @method static Builder|VTuber whereName($value)
  * @method static Builder|VTuber whereUpdatedAt($value)
  * @mixin Eloquent
  */

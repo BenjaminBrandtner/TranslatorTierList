@@ -24,14 +24,12 @@ use Illuminate\Support\Carbon;
  * @property string|null $tier
  * @property bool|null $good_editor
  * @property string|null $main_focus_manual
- * @property int|null $main_focus_computed
- * @property int|null $main_focus_computed_accuracy
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property-read Collection|\App\ChangeSuggestion[] $changeSuggestions
  * @property-read int|null $change_suggestions_count
  * @property-read string $url
- * @property-read \App\VTuber|null $mainFocusComputed
+ * @property-read \App\VTuber $mainFocusComputed
  * @property-read \App\VTuber|null $mainFocusManual
  * @method static Builder|TranslationChannel newModelQuery()
  * @method static Builder|TranslationChannel newQuery()
@@ -41,8 +39,6 @@ use Illuminate\Support\Carbon;
  * @method static Builder|TranslationChannel whereCreatedAt($value)
  * @method static Builder|TranslationChannel whereGoodEditor($value)
  * @method static Builder|TranslationChannel whereId($value)
- * @method static Builder|TranslationChannel whereMainFocusComputed($value)
- * @method static Builder|TranslationChannel whereMainFocusComputedAccuracy($value)
  * @method static Builder|TranslationChannel whereMainFocusManual($value)
  * @method static Builder|TranslationChannel whereName($value)
  * @method static Builder|TranslationChannel whereProfileImageHeight($value)

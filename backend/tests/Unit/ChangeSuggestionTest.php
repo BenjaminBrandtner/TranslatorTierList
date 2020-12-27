@@ -2,6 +2,7 @@
 
 namespace Tests\Unit;
 
+use App\ChangeSuggestion;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\Testcase;
 
@@ -85,5 +86,26 @@ class ChangeSuggestionTest extends TestCase
              ->assertJsonValidationErrors(['tier', 'goodEditor']);
 
         $this->assertDatabaseCount('change_suggestions', 0);
+    }
+
+    /**
+     * @test
+     */
+    public function youCanSearchTheDatabaseWithUrl()
+    {
+        ChangeSuggestion::factory()->createOne(['channel_id' => 'UC35ZxV8dz91YgXnhCU9s0Vw']);
+
+        $this->postJson(
+            '/api/change-suggestions/search',
+            ['url' => 'https://www.youtube.com/channel/UC35ZxV8dz91YgXnhCU9s0Vw']
+        )
+             ->assertStatus(200)
+             ->assertJsonCount(1, 'data');
+
+        $this->postJson(
+            '/api/change-suggestions/search',
+            ['url' => 'https://www.youtube.com/channel/asdf']
+        )
+             ->assertStatus(404);
     }
 }

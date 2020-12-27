@@ -54,6 +54,6 @@ class YoutubeClient
 
     public static function getChannelIdFromUrl(string $url): string
     {
-        return $channelId = (string)Str::of($url)->match('/youtube\.com\/channel\/([\w\d]+)/');
+        return (string)Str::of($url)->match('/youtube\.com\/channel\/([\w\d]+)/');
     }
 }
