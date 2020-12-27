@@ -36,10 +36,6 @@ class TranslationChannelFactory extends Factory
 
     public function uncategorized()
     {
-        return $this->state(
-            [
-                'tier' => null,
-            ]
-
+        return $this->state(['tier' => null,]);
     }
 }

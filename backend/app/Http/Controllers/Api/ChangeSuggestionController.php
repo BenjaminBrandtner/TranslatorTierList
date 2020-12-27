@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\ChangeSuggestion;
+use App\Http\Clients\Youtube\YoutubeClient;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\ChangeSuggestionResource;
 use App\Rules\YoutubeChannelUrl;
@@ -10,7 +11,6 @@ use App\TranslationChannel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Validation\Rule;
-use Str;
 
 class ChangeSuggestionController extends Controller
 {
@@ -29,7 +29,7 @@ class ChangeSuggestionController extends Controller
             ]
         );
 
-        $channelId = Str::of($validated['url'])->match('/youtube\.com\/channel\/([\w\d]+)/');
+        $channelId = YoutubeClient::getChannelIdFromUrl($validated['url']);
 
         ChangeSuggestion::create(
             [

@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/translation-channels', [TranslationChannelController::class, 'index']);
+Route::post('/translation-channels/search', [TranslationChannelController::class, 'search']);
 
 Route::post('/change-suggestions', [ChangeSuggestionController::class, 'store']);
 

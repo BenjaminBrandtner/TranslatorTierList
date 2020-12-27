@@ -6,6 +6,7 @@ use App\Http\Clients\Youtube\YoutubeChannel;
 use Eloquent;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 
@@ -54,6 +55,8 @@ use Illuminate\Support\Carbon;
  */
 class TranslationChannel extends Model
 {
+    use HasFactory;
+
     public static array $possibleTiers = ['S', 'A', 'B', 'C', 'U'];
     protected $guarded = [];
     protected $casts = [
