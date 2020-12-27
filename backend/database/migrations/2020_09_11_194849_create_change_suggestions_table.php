@@ -1,5 +1,6 @@
 <?php
 
+use App\TranslationChannel;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -18,8 +19,8 @@ class CreateChangeSuggestionsTable extends Migration
             function (Blueprint $table)
             {
                 $table->id();
-                $table->foreignId('translation_channel_id')->references('id')->on('translation_channels');
-                $table->enum('tier', ['S', 'A', 'B', 'C'])->nullable();
+                $table->string('channel_id');
+                $table->enum('tier', TranslationChannel::$possibleTiers)->nullable();
                 $table->boolean('good_editor')->nullable();
                 $table->timestamps();
             }

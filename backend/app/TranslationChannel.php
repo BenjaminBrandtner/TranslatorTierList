@@ -54,7 +54,7 @@ use Illuminate\Support\Carbon;
  */
 class TranslationChannel extends Model
 {
-    public static array $possibleTiers = ['S', 'A', 'B', 'C'];
+    public static array $possibleTiers = ['S', 'A', 'B', 'C', 'U'];
     protected $guarded = [];
     protected $casts = [
         'channel_created_at' => 'date',

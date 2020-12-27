@@ -2,7 +2,6 @@
 
 namespace Tests\Unit;
 
-use App\TranslationChannel;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\Testcase;
 
@@ -10,48 +9,46 @@ class ChangeSuggestionTest extends TestCase
 {
     use RefreshDatabase;
 
-    // TODO: new logic
-
     /**
      * @test
      */
     public function anyUserCanCreateAChangeSuggestion()
     {
         $this->withoutExceptionHandling();
-        //given there's one translation_channel in the db
-        TranslationChannel::create(['channel_id' => 'asdf']);
+        $this->postJson(
+            'api/change-suggestions',
+            [
+                'url' => 'https://www.youtube.com/channel/UC35ZxV8dz91YgXnhCU9s0Vw/videos',
+                'tier' => 'U',
+            ]
+        )
+             ->assertStatus(201);
 
-        //if i create a change suggestion
-        $this->post('/api/translation-channels/1/change-suggestions', ['tier' => 'S', 'goodEditor' => true])
-             ->assertOk();
-
-        //it should be in the database
         $this->assertDatabaseHas(
             'change_suggestions',
             [
-                'translation_channel_id' => 1,
-                'tier' => 'S',
-                'good_editor' => true,
+                'channel_id' => 'UC35ZxV8dz91YgXnhCU9s0Vw',
+                'tier' => 'U',
+                'good_editor' => null,
             ]
         );
-
-        //and be listed in the index-response
-        $this->getJson('/api/translation-channels/1/change-suggestions')
-             ->assertOk()
-             ->assertJsonCount(1, 'data')
-             ->assertJsonFragment(['goodEditor' => true]);
     }
 
     /**
      * @test
      */
-    public function cannotCreateChangeSuggestionForNonexistentChannel()
+    public function theYoutubeApiIsntCalled()
     {
-        //given there's no translation_channels in the db
-        $this->assertDatabaseCount('translation_channels', 0);
+        $mock = $this->createMockGuzzleClient([]);
+        $this->postJson(
+            'api/change-suggestions',
+            [
+                'url' => 'https://www.youtube.com/channel/UC35ZxV8dz91YgXnhCU9s0Vw',
+                'tier' => 'U',
+            ]
+        );
 
-        //if i create a change suggestion it should return a 404
-        $this->post('/api/translation-channels/1/change-suggestions', ['tier' => 'S'])->assertNotFound();
+        $this->assertNull($mock->getLastRequest());
     }
 
     /**
@@ -59,19 +56,34 @@ class ChangeSuggestionTest extends TestCase
      */
     public function validationWorks()
     {
-        //given there's one translation_channel in the db
-        TranslationChannel::create(['channel_id' => 'asdf']);
-
-        $this->postJson('/api/translation-channels/1/change-suggestions', ['tier' => 'lol'])
+        //url is required
+        $this->postJson('/api/change-suggestions', [])
              ->assertStatus(422)
-             ->assertJsonValidationErrors('tier');
+             ->assertJsonValidationErrors('url');
 
-        $this->postJson('/api/translation-channels/1/change-suggestions', ['goodEditor' => 'lol'])
+        //only valid youtube channel urls
+        $this->postJson(
+            'api/change-suggestions',
+            [
+                'url' => 'https://www.youtube.com/c/asdf',
+                'tier' => 'U',
+            ]
+        )
              ->assertStatus(422)
-             ->assertJsonValidationErrors('goodEditor');
+             ->assertJsonValidationErrors('url');
 
-        $this->postJson('/api/translation-channels/1/change-suggestions', [])
-             ->assertStatus(422);
-        // TODO: Main Focus
+        //tier needs to exist, goodEditor must be boolean
+        $this->postJson(
+            'api/change-suggestions',
+            [
+                'url' => 'https://www.youtube.com/channel/UC35ZxV8dz91YgXnhCU9s0Vw',
+                'tier' => 'asdf',
+                'goodEditor' => 'asdf',
+            ]
+        )
+             ->assertStatus(422)
+             ->assertJsonValidationErrors(['tier', 'goodEditor']);
+
+        $this->assertDatabaseCount('change_suggestions', 0);
     }
 }

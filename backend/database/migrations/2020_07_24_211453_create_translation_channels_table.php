@@ -1,5 +1,6 @@
 <?php
 
+use App\TranslationChannel;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -25,7 +26,7 @@ class CreateTranslationChannelsTable extends Migration
                 $table->string('profile_image_height')->nullable();
                 $table->date('channel_created_at')->nullable();
                 $table->bigInteger('subscribers_count')->nullable();
-                $table->enum('tier', ['S', 'A', 'B', 'C'])->nullable();
+                $table->enum('tier', TranslationChannel::$possibleTiers)->nullable();
                 $table->boolean('good_editor')->nullable();
                 $table->string('main_focus_manual')->nullable();
                 $table->timestamps();
