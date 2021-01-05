@@ -7,6 +7,7 @@ namespace App\Http\Clients\Youtube;
 use Google_Client;
 use Google_Service_YouTube;
 use Illuminate\Support\Collection;
+use Str;
 
 class YoutubeClient
 {
@@ -29,7 +30,10 @@ class YoutubeClient
         $channels = $chunks->flatMap(
             function ($ids)
             {
-                $response = $this->youtubeService->channels->listChannels('snippet,statistics', ['id' => $ids->toArray()]);
+                $response = $this->youtubeService->channels->listChannels(
+                    'snippet,statistics',
+                    ['id' => $ids->toArray()]
+                );
                 return $response->getItems();
             }
         );
@@ -46,5 +50,10 @@ class YoutubeClient
         }
 
         return $response->getItems()[0]->getSnippet()->channelId;
+    }
+
+    public static function getChannelIdFromUrl(string $url): string
+    {
+        return (string)Str::of($url)->match('/youtube\.com\/channel\/([\w\d]+)/');
     }
 }

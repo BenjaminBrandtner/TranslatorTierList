@@ -16,21 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/translation-channels', [TranslationChannelController::class, 'index']);
+Route::post('/translation-channels/search', [TranslationChannelController::class, 'search']);
 
-Route::get(
-    '/translation-channels/{translationChannel}/change-suggestions',
-    [ChangeSuggestionController::class, 'index']
-);
-Route::post(
-    '/translation-channels/{translationChannel}/change-suggestions',
-    [ChangeSuggestionController::class, 'store']
-);
+Route::post('/change-suggestions', [ChangeSuggestionController::class, 'store']);
+Route::post('/change-suggestions/search', [ChangeSuggestionController::class, 'search']);
 
-Route::get(
-    '/{any}',
-    function ()
-    {
-        abort(404, 'Route not found');
-    }
-);
-
+Route::fallback(function () { abort(404, 'Route not found'); });
