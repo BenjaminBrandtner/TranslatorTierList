@@ -1,4 +1,4 @@
-import { computed, reactive, ref } from 'vue'
+import { computed, reactive, ref, watch } from 'vue'
 
 export const channels = ref([])
 export let isLoading = ref(false)
@@ -60,8 +60,14 @@ tieredChannels['B'] = computed(() => _.filter(filteredChannels.value, ['tier', '
 tieredChannels['C'] = computed(() => _.filter(filteredChannels.value, ['tier', 'C']))
 tieredChannels['U'] = computed(() => _.filter(filteredChannels.value, ['tier', 'U']))
 
-export let showSiteExplanation = ref(true)
-export let showSiteExplanationCloseButton = ref(false)
+export let showSiteExplanation = ref(JSON.parse(localStorage.getItem('showSiteExplanation')) ?? true)
+export let showSiteExplanationCloseButton = ref(JSON.parse(localStorage.getItem('showSiteExplanationCloseButton')) ?? false)
+watch(showSiteExplanation,
+  (newValue) => localStorage.setItem('showSiteExplanation', JSON.stringify(newValue))
+)
+watch(showSiteExplanationCloseButton,
+  (newValue) => localStorage.setItem('showSiteExplanationCloseButton', JSON.stringify(newValue))
+)
 
 export async function initializeStore () {
   try {
