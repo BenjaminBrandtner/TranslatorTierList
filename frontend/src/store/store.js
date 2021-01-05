@@ -60,6 +60,9 @@ tieredChannels['B'] = computed(() => _.filter(filteredChannels.value, ['tier', '
 tieredChannels['C'] = computed(() => _.filter(filteredChannels.value, ['tier', 'C']))
 tieredChannels['U'] = computed(() => _.filter(filteredChannels.value, ['tier', 'U']))
 
+export let showSiteExplanation = ref(true)
+export let showSiteExplanationCloseButton = ref(false)
+
 export async function initializeStore () {
   try {
     isLoading.value = true

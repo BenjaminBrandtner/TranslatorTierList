@@ -1,6 +1,16 @@
 <template>
-    <details class="max-w-4xl inline-block bg-dark-3 border border-border-grey mt-1 rounded-xl text-bright-1">
-        <summary class="focus:outline-none px-2 py-1 cursor-pointer">Click me for an explanation</summary>
+    <details v-if="showSiteExplanation"
+             class="max-w-4xl inline-block mt-1
+                    border border-border-grey rounded-xl
+                    bg-dark-3 text-bright-1">
+        <summary class="focus:outline-none px-2 py-1 cursor-pointer"
+                 @click="showSiteExplanationCloseButton = true">
+            <span class="mr-2">Click me for an explanation</span>
+            <close-icon v-if="showSiteExplanationCloseButton"
+                        class="inline align-middle float-right
+                               cursor-pointer hover:text-primary"
+                        @click="showSiteExplanation = false"/>
+        </summary>
         <hr class="border-border-grey">
         <div class="px-2 py-1">
             <site-explanation></site-explanation>
@@ -18,15 +28,21 @@
 </template>
 
 <script>
-  import { filteredChannels, tieredChannels } from '../store/store.js'
+  import {
+    filteredChannels,
+    showSiteExplanation,
+    showSiteExplanationCloseButton,
+    tieredChannels
+  } from '../store/store.js'
   import FilterBar from '../components/FilterBar.vue'
   import SiteExplanation from '../components/SiteExplanation.vue'
   import TierBox from '../components/TierBox.vue'
+  import CloseIcon from '../components/icons/CloseIcon.vue'
   import { computed } from 'vue'
 
   export default {
     name: 'TierListView',
-    components: { FilterBar, SiteExplanation, TierBox },
+    components: { FilterBar, SiteExplanation, TierBox, CloseIcon },
     setup () {
       const tiers = [
         {
@@ -65,7 +81,9 @@
 
       return {
         tiers,
-        noChannels
+        noChannels,
+        showSiteExplanation,
+        showSiteExplanationCloseButton
       }
     }
   }
