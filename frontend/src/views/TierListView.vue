@@ -28,17 +28,13 @@
 </template>
 
 <script>
-  import {
-    filteredChannels,
-    showSiteExplanation,
-    showSiteExplanationCloseButton,
-    tieredChannels
-  } from '../store/store.js'
+  import { filteredChannels, tieredChannels } from '../store/store.js'
   import FilterBar from '../components/FilterBar.vue'
   import SiteExplanation from '../components/SiteExplanation.vue'
   import TierBox from '../components/TierBox.vue'
   import CloseIcon from '../components/icons/CloseIcon.vue'
   import { computed } from 'vue'
+  import { useLocalStorage } from '@vueuse/core'
 
   export default {
     name: 'TierListView',
@@ -78,6 +74,9 @@
       ]
 
       const noChannels = computed(() => _.isEmpty(filteredChannels.value))
+
+      const showSiteExplanation = useLocalStorage('showSiteExplanation', true)
+      const showSiteExplanationCloseButton = useLocalStorage('showSiteExplanationCloseButton', false)
 
       return {
         tiers,
