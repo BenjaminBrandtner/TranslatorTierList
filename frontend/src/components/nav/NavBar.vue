@@ -11,7 +11,7 @@
   import NavButton from './NavButton.vue'
   import NavSubMenu from './NavSubMenu.vue'
   import NavSubMenuButton from './NavSubMenuButton.vue'
-  import { navigableRoutes } from '../router/router.js'
+  import { navigableRoutes } from '../../router/router.js'
   import { computed, ref } from 'vue'
 
   export default {

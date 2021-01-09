@@ -21,7 +21,7 @@
         >
             &nbsp;
             <div v-if="subscribersCount" class="pill font-light mr-2">
-                {{ formattedSubscribersCount }}
+                {{ format(subscribersCount) }}
             </div>
             <div v-if="goodEditor" class="pill mr-2">
                 🎬
@@ -35,8 +35,7 @@
 </template>
 
 <script>
-  import { computed } from 'vue'
-  import { bgcolorClassForTier } from '../helpers/helpers.js'
+  import { bgcolorClassForTier, format } from '../helpers/helpers.js'
 
   export default {
     name: 'ChannelBubble',
@@ -52,12 +51,11 @@
     inheritAttrs: false,
     setup (props) {
       const url = 'https://www.youtube.com/channel/' + props.channelId
-      const formattedSubscribersCount = computed(() => props.subscribersCount.toLocaleString())
 
       return {
         bgColorClass: bgcolorClassForTier(props.tier),
         url,
-        formattedSubscribersCount
+        format
       }
     }
   }

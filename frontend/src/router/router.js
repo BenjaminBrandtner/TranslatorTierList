@@ -12,19 +12,19 @@ export const navigableRoutes = [
   {
     path: '/',
     component: TierListView,
-    label: 'Tier List',
+    label: 'Tier List',
     inSubmenuUntil: 600
   },
   {
     path: '/subcount',
     component: SubCountView,
-    label: 'Sub Count',
+    label: 'Sub Count',
     inSubmenuUntil: 700
   },
   {
     path: '/mainfocus',
     component: MainFocusView,
-    label: 'Main Focus',
+    label: 'Main Focus',
     inSubmenuUntil: 900
   },
   {
