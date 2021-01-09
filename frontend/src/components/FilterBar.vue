@@ -31,12 +31,11 @@
 
 <script>
   import { filters } from '../store/store.js'
+  import { format } from '../helpers/helpers.js'
 
   export default {
     name: 'FilterBar',
     setup () {
-      const format = (number) => number.toLocaleString()
-
       const tierOptions = [
         {
           value: 'all',

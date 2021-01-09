@@ -28,7 +28,7 @@
 
 <script>
   import { error, isLoading } from './store/store.js'
-  import NavBar from './components/NavBar.vue'
+  import NavBar from './components/nav/NavBar.vue'
   import Logo from './components/Logo.vue'
   import colors from './colors.js'
 
