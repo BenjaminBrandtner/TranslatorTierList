@@ -39,6 +39,7 @@
     setup () {
       let theme = colors[_.random(0, colors.length - 1)]
       document.documentElement.style.setProperty('--primary', theme.primary)
+      document.documentElement.style.setProperty('--primary-background', theme.background)
 
       return {
         theme,
@@ -48,3 +49,9 @@
     }
   }
 </script>
+
+<style>
+    body {
+        background: radial-gradient(ellipse, var(--primary-background), transparent 125%) no-repeat fixed;
+    }
+</style>
