@@ -19,8 +19,8 @@ const laravelPath = '../backend/'
 const indexCurrentPath = 'dist/index.html'
 const indexDestinationPath = laravelPath + 'resources/views/index.html'
 
-const assetsCurrentPath = 'dist/_assets'
-const assetsDestinationPath = laravelPath + 'public/_assets'
+const assetsCurrentPath = 'dist/assets'
+const assetsDestinationPath = laravelPath + 'public/assets'
 
 delet(indexDestinationPath)
 delet(assetsDestinationPath)

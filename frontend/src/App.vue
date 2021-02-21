@@ -7,7 +7,7 @@
         </nav>
 
         <div v-if="isLoading">
-            <img alt="Loading..." class="mx-auto mt-12" src="/_assets/loading.svg">
+            <img alt="Loading..." class="mx-auto mt-12" src="/assets/loading.svg">
         </div>
         <div v-else-if="error" class="mt-12 text-bright-1 font-medium text-2xl">
             {{ error }}
@@ -21,7 +21,7 @@
         </div>
 
         <div class="hidden xl:block fixed bottom-0 right-0 hover:opacity-25">
-            <img :src="'/_assets/' + theme.name + '.png'" alt="">
+            <img :src="'/assets/' + theme.name + '.png'" alt="">
         </div>
     </div>
 </template>
