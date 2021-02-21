@@ -20,6 +20,7 @@ class CreateVTubersTable extends Migration
                 $table->id();
                 $table->string('name');
                 $table->string('focus_name');
+                $table->foreignId('category_id')->nullable();
                 $table->timestamps();
             }
         );

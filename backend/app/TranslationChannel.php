@@ -5,7 +5,6 @@ namespace App;
 use App\Http\Clients\Youtube\YoutubeChannel;
 use Eloquent;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
@@ -26,11 +25,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $main_focus_manual
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property-read Collection|\App\ChangeSuggestion[] $changeSuggestions
- * @property-read int|null $change_suggestions_count
  * @property-read string $url
- * @property-read \App\VTuber $mainFocusComputed
- * @property-read \App\VTuber|null $mainFocusManual
  * @method static Builder|TranslationChannel newModelQuery()
  * @method static Builder|TranslationChannel newQuery()
  * @method static Builder|TranslationChannel query()
@@ -59,21 +54,6 @@ class TranslationChannel extends Model
         'channel_created_at' => 'date',
         'good_editor' => 'bool',
     ];
-
-    public function mainFocusManual()
-    {
-        return $this->belongsTo(VTuber::class, 'main_focus_manual');
-    }
-
-    public function mainFocusComputed()
-    {
-        return $this->belongsTo(VTuber::class, 'main_focus_computed');
-    }
-
-    public function changeSuggestions()
-    {
-        return $this->hasMany(ChangeSuggestion::class);
-    }
 
     public function getUrlAttribute(): string
     {
