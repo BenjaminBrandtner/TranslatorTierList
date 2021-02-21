@@ -1,0 +1,155 @@
+Hololive:
+  Hololive JP:
+    Gen 0:
+      - name: Tokino Sora
+        focus_name: 🐻
+      - name: Roboco
+        focus_name: 🤖
+      - name: Sakura Miko
+        focus_name: 🌸
+      - name: Hoshimachi Suisei
+        focus_name: ☄️
+      - name: AZKi
+        focus_name: ⚒
+    Gen 1:
+      - name: Yozora Mel
+        focus_name: 🌟
+      - name: Aki Rosenthal
+        focus_name: 🍎
+      - name: Natsuiro Matsuri
+        focus_name: 🏮
+      - name: Shirakami Fubuki
+        focus_name: 🌽
+      - name: Akai Haato
+        focus_name: ❣️
+    Gen 2:
+      - name: Minato Aqua
+        focus_name: ⚓️
+      - name: Murasaki Shion
+        focus_name: 🌙
+      - name: Nakiri Ayame
+        focus_name: 👿
+      - name: Yuzuki Choco
+        focus_name: 🍫💋
+      - name: Oozora Subaru
+        focus_name: 🚑
+    Gamers:
+      - name: Shirakami Fubuki
+        focus_name: 🌽
+      - name: Ookami Mio
+        focus_name: 🌲
+      - name: Nekomata Okayu
+        focus_name: 🍙
+      - name: Inugami Korone
+        focus_name: 🥐
+    Gen 3:
+      - name: Usada Pekora
+        focus_name: 👯
+      - name: Uruha Rushia
+        focus_name: 🦋
+      - name: Shiranui Flare
+        focus_name: 🔥
+      - name: Shirogane Noel
+        focus_name: ⚔️
+      - name: Houshou Marine
+        focus_name: 🏴‍☠️
+    Gen 4:
+      - name: Tsunomaki Watame
+        focus_name: 🐏
+      - name: Tokoyami Towa
+        focus_name: 👾
+      - name: Kiryu Coco
+        focus_name: 🐉
+      - name: Amane Kanata
+        focus_name: 💫
+      - name: Himemori Luna
+        focus_name: 🍬
+    Gen 5:
+      - name: Yukihana Lamy
+        focus_name: ☃️
+      - name: Momosuzu Nene
+        focus_name: 🥟
+      - name: Shishiro Botan
+        focus_name: ♌
+      - name: Omaru Polka
+        focus_name: 🎪
+      - name: Mano Aloe
+        focus_name: 👅
+
+  Hololive ID:
+    Gen 1:
+      - name: Airani Iofifteen
+        focus_name: 🎨
+      - name: Moona Hoshinova
+        focus_name: 🔮
+      - name: Ayunda Risu
+        focus_name: 🐿
+    Gen 2:
+      - name: Kureiji Ollie
+        focus_name: 🧟‍♀️
+      - name: Anya Melfissa
+        focus_name: 🍂
+      - name: Pavolia Reine
+        focus_name: 🦚
+
+  hololive EN:
+    Gen 1:
+      - name: Ninomae Ina'nis
+        focus_name: 🐙
+      - name: Takanashi Kiara
+        focus_name: 🐔
+      - name: Watson Amelia
+        focus_name: 🔎
+      - name: Mori Calliope
+        focus_name: 💀
+      - name: Gawr Gura
+        focus_name: 🔱
+
+  Hololive CN:
+    Gen 1:
+      - name: Yogiri
+        focus_name: 🍼🎸
+      - name: Civia
+        focus_name: 🌙🦄
+      - name: Spade Echo
+        focus_name: 🍑
+    Gen 2:
+      - name: Rosalyn
+        focus_name: 📖
+      - name: Doris
+        focus_name: 🐟
+      - name: Artia
+        focus_name: ❄️
+
+  Holostars:
+    Gen 1:
+      - name: Hanasaki Miyabi
+        focus_name: 🌺
+      - name: Kanade Izuru
+        focus_name: 🎸
+      - name: Arurandeisu
+        focus_name: 🍕
+      - name: Rikka
+        focus_name: ⚙️
+      - name: Yakushiji Suzaku
+        focus_name: 💊
+      - name: Kagami Kira
+        focus_name: 💙
+    Gen 2:
+      - name: Astel Leda
+        focus_name: 🎭
+      - name: Kishido Temma
+        focus_name: 🦔💨
+      - name: Yukoku Roberu
+        focus_name: 🍷
+    Gen 3:
+      - name: Kageyama Shien
+        focus_name: 🟣
+      - name: Aragami Oga
+        focus_name: 🐃
+      - name: Tsukishita Kaoru
+        focus_name: 💅
+
+Nijisanji:
+
+VOMS:

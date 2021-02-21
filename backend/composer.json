@@ -20,7 +20,8 @@
     "laravel/tinker": "^2.0",
     "orangehill/iseed": "^3.0",
     "sentry/sentry-laravel": "^2.0",
-    "spatie/laravel-backup": "^6.11"
+    "spatie/laravel-backup": "^6.11",
+    "symfony/yaml": "^5.2"
   },
   "require-dev": {
     "barryvdh/laravel-ide-helper": "^2.8",
