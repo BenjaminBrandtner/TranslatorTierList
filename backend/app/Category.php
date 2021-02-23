@@ -20,7 +20,7 @@ use Kalnoy\Nestedset\QueryBuilder;
  * @property int|null $parent_id
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\VTuber[] $VTubers
  * @property-read int|null $v_tubers_count
- * @property-read \Kalnoy\Nestedset\Collection|Category[] $children
+ * @property-read Collection|Category[] $children
  * @property-read int|null $children_count
  * @property-read Category|null $parent
  * @method static Collection|static[] all($columns = ['*'])

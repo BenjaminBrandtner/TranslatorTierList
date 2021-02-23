@@ -151,5 +151,361 @@ Hololive:
         focus_name: 💅
 
 Nijisanji:
+  Nijisanji JP:
+    First wave:
+      - name: Tsukino Mito
+        focus_name: 🐰
+      - name: Yuki Chihiro
+        focus_name: 🎀💙
+      - name: Elu
+        focus_name: 🗼
+      - name: Higuchi Kaede
+        focus_name: 🍁
+      - name: Shizuka Rin
+        focus_name: 💜
+      - name: Shibuya Hajime
+        focus_name: 🌱
+      - name: Suzuya Aki
+        focus_name: 🐈
+      - name: Moira
+        focus_name: 😇
+    Second wave:
+      - name: Mononobe Alice
+        focus_name: ♥️♠️♦️♣️
+      - name: Fushimi Gaku
+        focus_name: ✌
+      - name: Ienaga Mugi
+        focus_name: 🌷
+      - name: Morinaka Kazaki
+        focus_name: 🐻
+      - name: Suzuka Utako
+        focus_name: 🎶
+      - name: Ushimi Ichigo
+        focus_name: 🍓
+      - name: Yuhi Riri
+        focus_name: 🌇
+      - name: Kenmochi Toya
+        focus_name: ⚔️
+      - name: Gilzaren III
+        focus_name: 🏰🌕
+      - name: Fumino Tamaki
+        focus_name: 🐟
+    Gamers:
+      - name: Kanae
+        focus_name: 🔫
+      - name: Akabane Youko
+        focus_name: 💀
+      - name: Sasaki Saku
+        focus_name: 🎋
+      - name: Honma Himawari
+        focus_name: 🌻
+      - name: Makaino Ririmu
+        focus_name: 🍼
+      - name: Kuzuha
+        focus_name: 🎲
+      - name: Shiina Yuika
+        focus_name: 👻
+      - name: Yamiyono Moruru
+        focus_name: 🍜
+      - name: Setsuna
+        focus_name: ❄️
+    SEEDs:
+      - name: Dola
+        focus_name: 🔥
+      - name: Hanabatake Chaika
+        focus_name: 🌵
+      - name: Azuchi Momo
+        focus_name: 🍑
+      - name: Ryushen
+        focus_name: 🐼
+      - name: Sister Cleaire
+        focus_name: 🔔
+      - name: Suzuki Masaru
+        focus_name: ☪
+      - name: Todoroki Kyoko
+        focus_name: 🐐
+      - name: Uzuki Kou
+        focus_name: 🌙
+      - name: Yashiro Kizuku
+        focus_name: 🖥
+      - name: Kanda Shoichi
+        focus_name: 🔪
+      - name: Amemori Sayo
+        focus_name: ☔️
+      - name: Takamiya Rion
+        focus_name: 🦅
+      - name: Asuka Hina
+        focus_name: 🐤
+      - name: Maimoto Keisuke
+        focus_name: 👨‍🌾
+      - name: Debidebi Debiru
+        focus_name: 🚪👿
+      - name: Rindou Mikoto
+        focus_name: 🍶⚜️
+      - name: Joe Rikiichi
+        focus_name: 🤡🎈
+      - name: Machita Chima
+        focus_name: 🐹
+      - name: Sakura Ritsuki
+        focus_name: 🌸🌙
+      - name: Belmond Banderas
+        focus_name: 🥃
+      - name: Yaguruma Rine
+        focus_name: 🌽
+      - name: Yumeoi Kakeru
+        focus_name: 🎤
+      - name: Kuroi Shiba
+        focus_name: 🐕🐾
+      - name: Hassaku Yuzu
+        focus_name: 🍊
+      - name: Nakao Azuma
+        focus_name: ☀️
+      - name: Naruto Kogane
+        focus_name: Kogane
+      - name: Umiyashano Kami
+        focus_name: ⛩
+      - name: Tsukimi Shizuku
+        focus_name: 🎑💊
+      - name: Achikita Chinami
+        focus_name: 🍬
+      - name: Izumo Kasumi
+        focus_name: 🦑
+    VOIZ:
+      - name: Harusaki Air
+        focus_name: 🍭
+      - name: Naruse Naru
+        focus_name: 🎙
+      - name: Kaminari Poaro
+        focus_name: Poaro
+      - name: Kurohane Kuroto
+        focus_name: Kuroto
+    2019 wave:
+      - name: Warabeda Meiji
+        focus_name: 🐺🍎
+      - name: Gundo Mirei
+        focus_name: 🐽
+      - name: Yuzuki Roa
+        focus_name: 🌖
+      - name: Onomachi Haruka
+        focus_name: ♨️
+      - name: Kataribe Tsumugu
+        focus_name: 📘🧂
+      - name: Seto Miyako
+        focus_name: 📷💚
+      - name: Otogibara Era
+        focus_name: 🏰🕛
+      - name: Inui Toko
+        focus_name: 🍹
+      - name: Ange Katrina
+        focus_name: ⚖
+      - name: Lize Helesta
+        focus_name: 👑
+      - name: Saegusa Akina
+        focus_name: 🌶
+      - name: Aizono Manami
+        focus_name: 🦀💕
+      - name: Suzuhara Lulu
+        focus_name: 🎨
+      - name: Yukishiro Mahiro
+        focus_name: 🌐✨
+      - name: Ex Albio
+        focus_name: 🛡
+      - name: Levi Elipha
+        focus_name: 🔲
+      - name: Hayama Marin
+        focus_name: 🍃🗻
+      - name: Nui Sociere
+        focus_name: 🎃
+      - name: Hakase Fuyuki
+        focus_name: ⚗
+      - name: Kagami Hayato
+        focus_name: 🏢
+      - name: Yorumi Rena
+        focus_name: 🎩🐤
+      - name: Mayuzumi Kai
+        focus_name: 💻💙
+      - name: Ars Almal
+        focus_name: 📕
+      - name: Aiba Uiha
+        focus_name: 🍮💎
+      - name: Amamiya Kokoro
+        focus_name: 🎐
+      - name: Eli Conifer
+        focus_name: 🌲
+      - name: Ratna Petit
+        focus_name: 🐻💎
+      - name: Hayase Sou
+        focus_name: 🏃‍♀️💨
+      - name: Sukoya Kana
+        focus_name: 💉💘
+      - name: Shellin Burgundy
+        focus_name: 🧐
+      - name: Fumi
+        focus_name: 🔖
+      - name: Hoshikawa Sara
+        focus_name: 🌟
+      - name: Yamagami Karuta
+        focus_name: 🎴
+      - name: Matsukai Mao
+        focus_name: 💥
+      - name: Emma★August
+        focus_name: ★
+      - name: Luis Cammy
+        focus_name: ❤️🦋
+      - name: Fuwa Minato
+        focus_name: 🥂✨
+      - name: Shirayuki Tomoe
+        focus_name: 👠⛓️
+      - name: Gwelu Os Gar
+        focus_name: 😎
+      - name: Mashiro
+        focus_name: 🧷
+      - name: Naraka
+        focus_name: ✖🍳
+      - name: Kurusu Natsume
+        focus_name: 🐏🎵
+      - name: Kudou Chitose
+        focus_name: 🧠
+      - name: Shindo Raito
+        focus_name: Raito
+    2020 wave:
+      - name: Furen E Lustario
+        focus_name: 🎠
+      - name: Melissa Kinrenka
+        focus_name: 🐝
+      - name: Ibrahim
+        focus_name: 💧
+      - name: Nagao Kei
+        focus_name: ☯️
+      - name: Genzuki Tojiro
+        focus_name: 🎻🛵
+      - name: Kaida Haru
+        focus_name: 🌞
+      - name: Sorahoshi Kirame
+        focus_name: 🌌
+      - name: Asahina Akane
+        focus_name: 🦖🎖
+      - name: Suo Sango
+        focus_name: 💞🦩
+      - name: Todo Kohaku
+        focus_name: 🍯
+      - name: Kitakoji Hisui
+        focus_name: ✳
+      - name: Nishizono Chigusa
+        focus_name: 🐬🌱
+      - name: Kingyozaka Meiro
+        focus_name: 🩰
+    NETWORK:
+      - name: Tenkai Tukasa
+        focus_name: 🎲
+      - name: Fairys-chan
+        focus_name: 🐦
+
+  Nijisanji ID:
+    3SetBBQ:
+      - name: Hana Macchia
+        focus_name: ☕
+      - name: ZEA Cornelia
+        focus_name: 🔶
+      - name: Taka Radjiman
+        focus_name: 🍖
+    Clover McOver:
+      - name: Rai Galilei
+        focus_name: 🚨
+      - name: Riksa Dhirendra
+        focus_name: 💥
+      - name: Amicia Michella
+        focus_name: 🐧
+      - name: Miyu Ottavia
+        focus_name: 🦦
+    LAN_NEE3S:
+      - name: Azura Cecillia
+        focus_name: 👽
+      - name: Layla Alstroemeria
+        focus_name: 🕰️🌺
+      - name: Nara Haramaung
+        focus_name: 🐯
+    3FicLite:
+      - name: Etna Crimson
+        focus_name: 🌋🍔
+      - name: Bonnivier Pranaja
+        focus_name: 🎣
+      - name: Siska Leontyne
+        focus_name: 🔦🦁
+    53Renade:
+      - name: Nagisa Arcinia
+        focus_name: 🐥🍭
+      - name: Derem Kado
+        focus_name: 🎁
+      - name: Reza Avanluna
+        focus_name: 🌒🎸☁
+
+  Nijisanji IN:
+    - name: Aadya
+      focus_name: 🌸
+    - name: Noor
+      focus_name: 💎♦️
+    - name: Vihaan
+      focus_name: Vihaan
+
+
+  Nijisanji KR:
+    1st wave:
+      - name: Shin Yuya
+        focus_name: 🌛🌱
+      - name: Min Suha
+        focus_name: 🌊
+      - name: Yu Ruri
+        focus_name: 🎀🧸
+      - name: Wiffy
+        focus_name: 📶
+    541 E&C:
+      - name: Gaon
+        focus_name: 👔
+      - name: Han Chiho
+        focus_name: 🦋
+      - name: Moarin
+        focus_name: 💕
+      - name: Kaen
+        focus_name: 🦴🔔
+      - name: Lorou
+        focus_name: 🎵
+      - name: Hakuren
+        focus_name: ☁️
+    2nd wave:
+      - name: So Nagi
+        focus_name: 🌧
+      - name: Chae Ara
+        focus_name: 🌹💛
+      - name: Lee Siu
+        focus_name: 🐾
+    3rd wave:
+      - name: Nun Bora
+        focus_name: ❄️💜
+      - name: Akira Ray
+        focus_name: 😸
+      - name: Lee Roha
+        focus_name: 🔰
+    4th wave:
+      - name: Yang Nari
+        focus_name: 📌
+      - name: Ryu Hari
+        focus_name: 👁‍🗨
+      - name: Shin Kiru
+        focus_name: 🌫
+      - name: Oh Jiyu
+        focus_name: ⚜️
 
 VOMS:
+  - name: Amano Pikamee
+    focus_name: ⚡
+  - name: Hikasa Tomoshika
+    focus_name: 🦌
+  - name: Jitomi Monoe
+    focus_name: 🧲
+
+Independent:
+  - name: Kagura Mea
+    focus_name: Mea
+  - name: Shigure Ui
+    focus_name: Ui
