@@ -36,4 +36,9 @@ class ChangeSuggestion extends Model
     protected $casts = [
         'good_editor' => 'bool',
     ];
+
+    public function mainFocus()
+    {
+        return $this->morphTo();
+    }
 }

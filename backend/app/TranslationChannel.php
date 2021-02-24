@@ -55,6 +55,11 @@ class TranslationChannel extends Model
         'good_editor' => 'bool',
     ];
 
+    public function mainFocus()
+    {
+        return $this->morphTo();
+    }
+
     public function getUrlAttribute(): string
     {
         return YoutubeChannel::$baseUrl . $this->channel_id;

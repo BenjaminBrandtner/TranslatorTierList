@@ -28,7 +28,7 @@ class CreateTranslationChannelsTable extends Migration
                 $table->bigInteger('subscribers_count')->nullable();
                 $table->enum('tier', TranslationChannel::$possibleTiers)->nullable();
                 $table->boolean('good_editor')->nullable();
-                $table->string('main_focus_manual')->nullable();
+                $table->nullableMorphs('main_focus');
                 $table->timestamps();
             }
         );

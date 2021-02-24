@@ -24,13 +24,13 @@ class CategoriesAndVTubersTableSeeder extends Seeder
 
     private function createCategory(string $name, Category $parent = null): Category
     {
-        print("creating Category $name, appending to " . optional($parent)->name . "\n");
+        //print("creating Category $name, appending to " . optional($parent)->name . "\n");
         return Category::create(['name' => $name], $parent);
     }
 
     private function createVTuber(array $attributes, Category $parent): void
     {
-        print("creating VTuber " . $attributes['name'] . " in $parent->name\n");
+        //print("creating VTuber " . $attributes['name'] . " in $parent->name\n");
         $parent->VTubers()->create($attributes);
     }
 

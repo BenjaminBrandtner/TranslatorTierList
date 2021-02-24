@@ -22,6 +22,7 @@ class CreateChangeSuggestionsTable extends Migration
                 $table->string('channel_id');
                 $table->enum('tier', TranslationChannel::$possibleTiers)->nullable();
                 $table->boolean('good_editor')->nullable();
+                $table->nullableMorphs('main_focus');
                 $table->timestamps();
             }
         );
