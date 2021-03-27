@@ -27,15 +27,18 @@
                 🎬
             </div>
             <div class="flex-1"/>
-            <div v-if="mainFocusManual" class="pill ml-6 md:ml-8">
-                {{ mainFocusManual }}
+            <div v-if="mainFocus" class="pill ml-6 md:ml-8 cursor-default">
+                {{ mainFocus.focusName }}
             </div>
+            <!-- Todo: Tooltip -->
         </div>
     </div>
 </template>
 
 <script>
   import { bgcolorClassForTier, format } from '../helpers/helpers.js'
+  import { categories, vTubers } from '../store/store'
+  import { computed } from 'vue'
 
   export default {
     name: 'ChannelBubble',
@@ -43,7 +46,8 @@
       name: String,
       channelId: String,
       goodEditor: Boolean,
-      mainFocusManual: String,
+      mainFocusId: Number,
+      mainFocusType: String,
       profileImageUrl: String,
       subscribersCount: Number,
       tier: String
@@ -52,7 +56,14 @@
     setup (props) {
       const url = 'https://www.youtube.com/channel/' + props.channelId
 
+      const mainFocus = computed(() => {
+        if (props.mainFocusId === null) return null
+        const type = props.mainFocusType === 'App\\VTuber' ? vTubers : categories
+        return _.find(type.value, { 'id': props.mainFocusId })
+      })
+
       return {
+        mainFocus,
         bgColorClass: bgcolorClassForTier(props.tier),
         url,
         format

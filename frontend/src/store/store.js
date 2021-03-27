@@ -1,6 +1,9 @@
 import { computed, reactive, ref } from 'vue'
 
 export const channels = ref([])
+export const categories = ref([])
+export const vTubers = ref([])
+export const categoryTree = ref([])
 export let isLoading = ref(false)
 export let error = ref('')
 
@@ -63,8 +66,16 @@ tieredChannels['U'] = computed(() => _.filter(filteredChannels.value, ['tier', '
 export async function initializeStore () {
   try {
     isLoading.value = true
-    const response = await axios.get(import.meta.env.VITE_TTL_BASE_URL + '/api/translation-channels')
-    channels.value = response.data.data
+    const [channelsResponse, categoriesResponse, categoryTreeResponse, vTubersResponse] = await Promise.all([
+      axios.get(import.meta.env.VITE_TTL_BASE_URL + '/api/translation-channels'),
+      axios.get(import.meta.env.VITE_TTL_BASE_URL + '/api/categories'),
+      axios.get(import.meta.env.VITE_TTL_BASE_URL + '/api/categories/tree'),
+      axios.get(import.meta.env.VITE_TTL_BASE_URL + '/api/vtubers')
+    ])
+    channels.value = channelsResponse.data.data
+    categories.value = categoriesResponse.data.data
+    categoryTree.value = categoryTreeResponse.data.data
+    vTubers.value = vTubersResponse.data.data
   } catch (e) {
     console.error(e)
     error.value = 'Sorry, something went wrong. Please try again later.'

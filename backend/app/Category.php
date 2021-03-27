@@ -80,7 +80,7 @@ class Category extends Model
 {
     use HasFactory, NodeTrait;
 
-    public function VTubers()
+    public function vTubers()
     {
         return $this->hasMany(VTuber::class);
     }

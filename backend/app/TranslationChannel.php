@@ -52,7 +52,7 @@ class TranslationChannel extends Model
     protected $guarded = [];
     protected $casts = [
         'channel_created_at' => 'date',
-        'good_editor' => 'bool',
+        'good_editor'        => 'bool',
     ];
 
     public function mainFocus()
@@ -69,15 +69,15 @@ class TranslationChannel extends Model
     {
         TranslationChannel::create(
             [
-                'name' => $youtubeChannel->name,
-                'channel_id' => $youtubeChannel->channelId,
-                'profile_image_url' => $youtubeChannel->logo->url,
-                'profile_image_width' => $youtubeChannel->logo->width,
+                'name'                 => $youtubeChannel->name,
+                'channel_id'           => $youtubeChannel->channelId,
+                'profile_image_url'    => $youtubeChannel->logo->url,
+                'profile_image_width'  => $youtubeChannel->logo->width,
                 'profile_image_height' => $youtubeChannel->logo->height,
-                'channel_created_at' => $youtubeChannel->channel_created_at,
-                'subscribers_count' => $youtubeChannel->subscribersCount,
-                'tier' => $tier,
-                'good_editor' => $goodEditor,
+                'channel_created_at'   => $youtubeChannel->channel_created_at,
+                'subscribers_count'    => $youtubeChannel->subscribersCount,
+                'tier'                 => $tier,
+                'good_editor'          => $goodEditor,
             ]
         );
     }

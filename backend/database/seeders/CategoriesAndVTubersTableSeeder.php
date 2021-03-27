@@ -31,7 +31,7 @@ class CategoriesAndVTubersTableSeeder extends Seeder
     private function createVTuber(array $attributes, Category $parent): void
     {
         //print("creating VTuber " . $attributes['name'] . " in $parent->name\n");
-        $parent->VTubers()->create($attributes);
+        $parent->vTubers()->create($attributes);
     }
 
     private function createCategoryOrVTubers($data, $lastNode = null)
