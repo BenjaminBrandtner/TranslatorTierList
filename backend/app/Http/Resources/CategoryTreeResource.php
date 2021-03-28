@@ -15,11 +15,11 @@ class CategoryTreeResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id'        => $this->id,
-            'name'      => $this->name,
-            'focusName' => $this->name,
-            'parentId'  => $this->parent_id,
-            'children'  => $this->children ? CategoryTreeResource::collection($this->children) : null,
+            'id'       => $this->id,
+            'name'     => $this->name,
+            'fullName' => $this->full_name,
+            'parentId' => $this->parent_id,
+            'children' => $this->children ? CategoryTreeResource::collection($this->children) : null,
         ];
     }
 }

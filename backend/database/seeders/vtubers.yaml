@@ -1,511 +1,731 @@
 Hololive:
-  Hololive JP:
+  JP:
     Gen 0:
       - name: Tokino Sora
-        focus_name: 🐻
+        short_name: 🐻
+        emoji: 🐻
       - name: Roboco
-        focus_name: 🤖
+        short_name: 🤖
+        emoji: 🤖
       - name: Sakura Miko
-        focus_name: 🌸
+        short_name: 🌸
+        emoji: 🌸
       - name: Hoshimachi Suisei
-        focus_name: ☄️
+        short_name: ☄️
+        emoji: ☄️
       - name: AZKi
-        focus_name: ⚒
+        short_name: ⚒
+        emoji: ⚒
     Gen 1:
       - name: Yozora Mel
-        focus_name: 🌟
+        short_name: 🌟
+        emoji: 🌟
       - name: Aki Rosenthal
-        focus_name: 🍎
+        short_name: 🍎
+        emoji: 🍎
       - name: Natsuiro Matsuri
-        focus_name: 🏮
+        short_name: 🏮
+        emoji: 🏮
       - name: Shirakami Fubuki
-        focus_name: 🌽
+        short_name: 🌽
+        emoji: 🌽
       - name: Akai Haato
-        focus_name: ❣️
+        short_name: ❣️
+        emoji: ❣️
     Gen 2:
       - name: Minato Aqua
-        focus_name: ⚓️
+        short_name: ⚓️
+        emoji: ⚓️
       - name: Murasaki Shion
-        focus_name: 🌙
+        short_name: 🌙
+        emoji: 🌙
       - name: Nakiri Ayame
-        focus_name: 👿
+        short_name: 👿
+        emoji: 👿
       - name: Yuzuki Choco
-        focus_name: 🍫💋
+        short_name: 🍫💋
+        emoji: 🍫💋
       - name: Oozora Subaru
-        focus_name: 🚑
+        short_name: 🚑
+        emoji: 🚑
     Gamers:
       - name: Shirakami Fubuki
-        focus_name: 🌽
+        short_name: 🌽
+        emoji: 🌽
       - name: Ookami Mio
-        focus_name: 🌲
+        short_name: 🌲
+        emoji: 🌲
       - name: Nekomata Okayu
-        focus_name: 🍙
+        short_name: 🍙
+        emoji: 🍙
       - name: Inugami Korone
-        focus_name: 🥐
+        short_name: 🥐
+        emoji: 🥐
     Gen 3:
       - name: Usada Pekora
-        focus_name: 👯
+        short_name: 👯
+        emoji: 👯
       - name: Uruha Rushia
-        focus_name: 🦋
+        short_name: 🦋
+        emoji: 🦋
       - name: Shiranui Flare
-        focus_name: 🔥
+        short_name: 🔥
+        emoji: 🔥
       - name: Shirogane Noel
-        focus_name: ⚔️
+        short_name: ⚔️
+        emoji: ⚔️
       - name: Houshou Marine
-        focus_name: 🏴‍☠️
+        short_name: 🏴‍☠️
+        emoji: 🏴‍☠️
     Gen 4:
       - name: Tsunomaki Watame
-        focus_name: 🐏
+        short_name: 🐏
+        emoji: 🐏
       - name: Tokoyami Towa
-        focus_name: 👾
+        short_name: 👾
+        emoji: 👾
       - name: Kiryu Coco
-        focus_name: 🐉
+        short_name: 🐉
+        emoji: 🐉
       - name: Amane Kanata
-        focus_name: 💫
+        short_name: 💫
+        emoji: 💫
       - name: Himemori Luna
-        focus_name: 🍬
+        short_name: 🍬
+        emoji: 🍬
     Gen 5:
       - name: Yukihana Lamy
-        focus_name: ☃️
+        short_name: ☃️
+        emoji: ☃️
       - name: Momosuzu Nene
-        focus_name: 🥟
+        short_name: 🥟
+        emoji: 🥟
       - name: Shishiro Botan
-        focus_name: ♌
+        short_name: ♌
+        emoji: ♌
       - name: Omaru Polka
-        focus_name: 🎪
+        short_name: 🎪
+        emoji: 🎪
       - name: Mano Aloe
-        focus_name: 👅
+        short_name: 👅
+        emoji: 👅
 
-  Hololive ID:
+  ID:
     Gen 1:
       - name: Airani Iofifteen
-        focus_name: 🎨
+        short_name: 🎨
+        emoji: 🎨
       - name: Moona Hoshinova
-        focus_name: 🔮
+        short_name: 🔮
+        emoji: 🔮
       - name: Ayunda Risu
-        focus_name: 🐿
+        short_name: 🐿
+        emoji: 🐿
     Gen 2:
       - name: Kureiji Ollie
-        focus_name: 🧟‍♀️
+        short_name: 🧟‍♀️
+        emoji: 🧟‍♀️
       - name: Anya Melfissa
-        focus_name: 🍂
+        short_name: 🍂
+        emoji: 🍂
       - name: Pavolia Reine
-        focus_name: 🦚
+        short_name: 🦚
+        emoji: 🦚
 
-  hololive EN:
+  EN:
     Gen 1:
       - name: Ninomae Ina'nis
-        focus_name: 🐙
+        short_name: 🐙
+        emoji: 🐙
       - name: Takanashi Kiara
-        focus_name: 🐔
+        short_name: 🐔
+        emoji: 🐔
       - name: Watson Amelia
-        focus_name: 🔎
+        short_name: 🔎
+        emoji: 🔎
       - name: Mori Calliope
-        focus_name: 💀
+        short_name: 💀
+        emoji: 💀
       - name: Gawr Gura
-        focus_name: 🔱
+        short_name: 🔱
+        emoji: 🔱
 
-  Hololive CN:
+  CN:
     Gen 1:
       - name: Yogiri
-        focus_name: 🍼🎸
+        short_name: 🍼🎸
+        emoji: 🍼🎸
       - name: Civia
-        focus_name: 🌙🦄
+        short_name: 🌙🦄
+        emoji: 🌙🦄
       - name: Spade Echo
-        focus_name: 🍑
+        short_name: 🍑
+        emoji: 🍑
     Gen 2:
       - name: Rosalyn
-        focus_name: 📖
+        short_name: 📖
+        emoji: 📖
       - name: Doris
-        focus_name: 🐟
+        short_name: 🐟
+        emoji: 🐟
       - name: Artia
-        focus_name: ❄️
+        short_name: ❄️
+        emoji: ❄️
 
-  Holostars:
-    Gen 1:
-      - name: Hanasaki Miyabi
-        focus_name: 🌺
-      - name: Kanade Izuru
-        focus_name: 🎸
-      - name: Arurandeisu
-        focus_name: 🍕
-      - name: Rikka
-        focus_name: ⚙️
-      - name: Yakushiji Suzaku
-        focus_name: 💊
-      - name: Kagami Kira
-        focus_name: 💙
-    Gen 2:
-      - name: Astel Leda
-        focus_name: 🎭
-      - name: Kishido Temma
-        focus_name: 🦔💨
-      - name: Yukoku Roberu
-        focus_name: 🍷
-    Gen 3:
-      - name: Kageyama Shien
-        focus_name: 🟣
-      - name: Aragami Oga
-        focus_name: 🐃
-      - name: Tsukishita Kaoru
-        focus_name: 💅
+Holostars:
+  Gen 1:
+    - name: Hanasaki Miyabi
+      short_name: 🌺
+      emoji: 🌺
+    - name: Kanade Izuru
+      short_name: 🎸
+      emoji: 🎸
+    - name: Arurandeisu
+      short_name: 🍕
+      emoji: 🍕
+    - name: Rikka
+      short_name: ⚙️
+      emoji: ⚙️
+    - name: Yakushiji Suzaku
+      short_name: 💊
+      emoji: 💊
+    - name: Kagami Kira
+      short_name: 💙
+      emoji: 💙
+  Gen 2:
+    - name: Astel Leda
+      short_name: 🎭
+      emoji: 🎭
+    - name: Kishido Temma
+      short_name: 🦔💨
+      emoji: 🦔💨
+    - name: Yukoku Roberu
+      short_name: 🍷
+      emoji: 🍷
+  Gen 3:
+    - name: Kageyama Shien
+      short_name: 🟣
+      emoji: 🟣
+    - name: Aragami Oga
+      short_name: 🐃
+      emoji: 🐃
+    - name: Tsukishita Kaoru
+      short_name: 💅
+      emoji: 💅
 
 Nijisanji:
-  Nijisanji JP:
+  JP:
     First wave:
       - name: Tsukino Mito
-        focus_name: 🐰
+        short_name: 🐰
+        emoji: 🐰
       - name: Yuki Chihiro
-        focus_name: 🎀💙
+        short_name: 🎀💙
+        emoji: 🎀💙
       - name: Elu
-        focus_name: 🗼
+        short_name: 🗼
+        emoji: 🗼
       - name: Higuchi Kaede
-        focus_name: 🍁
+        short_name: 🍁
+        emoji: 🍁
       - name: Shizuka Rin
-        focus_name: 💜
+        short_name: 💜
+        emoji: 💜
       - name: Shibuya Hajime
-        focus_name: 🌱
+        short_name: 🌱
+        emoji: 🌱
       - name: Suzuya Aki
-        focus_name: 🐈
+        short_name: 🐈
+        emoji: 🐈
       - name: Moira
-        focus_name: 😇
+        short_name: 😇
+        emoji: 😇
     Second wave:
       - name: Mononobe Alice
-        focus_name: ♥️♠️♦️♣️
+        short_name: ♥️♠️♦️♣️
+        emoji: ♥️♠️♦️♣️
       - name: Fushimi Gaku
-        focus_name: ✌
+        short_name: ✌
+        emoji: ✌
       - name: Ienaga Mugi
-        focus_name: 🌷
+        short_name: 🌷
+        emoji: 🌷
       - name: Morinaka Kazaki
-        focus_name: 🐻
+        short_name: 🐻
+        emoji: 🐻
       - name: Suzuka Utako
-        focus_name: 🎶
+        short_name: 🎶
+        emoji: 🎶
       - name: Ushimi Ichigo
-        focus_name: 🍓
+        short_name: 🍓
+        emoji: 🍓
       - name: Yuhi Riri
-        focus_name: 🌇
+        short_name: 🌇
+        emoji: 🌇
       - name: Kenmochi Toya
-        focus_name: ⚔️
+        short_name: ⚔️
+        emoji: ⚔️
       - name: Gilzaren III
-        focus_name: 🏰🌕
+        short_name: 🏰🌕
+        emoji: 🏰🌕
       - name: Fumino Tamaki
-        focus_name: 🐟
+        short_name: 🐟
+        emoji: 🐟
     Gamers:
       - name: Kanae
-        focus_name: 🔫
+        short_name: 🔫
+        emoji: 🔫
       - name: Akabane Youko
-        focus_name: 💀
+        short_name: 💀
+        emoji: 💀
       - name: Sasaki Saku
-        focus_name: 🎋
+        short_name: 🎋
+        emoji: 🎋
       - name: Honma Himawari
-        focus_name: 🌻
+        short_name: 🌻
+        emoji: 🌻
       - name: Makaino Ririmu
-        focus_name: 🍼
+        short_name: 🍼
+        emoji: 🍼
       - name: Kuzuha
-        focus_name: 🎲
+        short_name: 🎲
+        emoji: 🎲
       - name: Shiina Yuika
-        focus_name: 👻
+        short_name: 👻
+        emoji: 👻
       - name: Yamiyono Moruru
-        focus_name: 🍜
+        short_name: 🍜
+        emoji: 🍜
       - name: Setsuna
-        focus_name: ❄️
+        short_name: ❄️
+        emoji: ❄️
     SEEDs:
       - name: Dola
-        focus_name: 🔥
+        short_name: 🔥
+        emoji: 🔥
       - name: Hanabatake Chaika
-        focus_name: 🌵
+        short_name: 🌵
+        emoji: 🌵
       - name: Azuchi Momo
-        focus_name: 🍑
+        short_name: 🍑
+        emoji: 🍑
       - name: Ryushen
-        focus_name: 🐼
+        short_name: 🐼
+        emoji: 🐼
       - name: Sister Cleaire
-        focus_name: 🔔
+        short_name: 🔔
+        emoji: 🔔
       - name: Suzuki Masaru
-        focus_name: ☪
+        short_name: ☪
+        emoji: ☪
       - name: Todoroki Kyoko
-        focus_name: 🐐
+        short_name: 🐐
+        emoji: 🐐
       - name: Uzuki Kou
-        focus_name: 🌙
+        short_name: 🌙
+        emoji: 🌙
       - name: Yashiro Kizuku
-        focus_name: 🖥
+        short_name: 🖥
+        emoji: 🖥
       - name: Kanda Shoichi
-        focus_name: 🔪
+        short_name: 🔪
+        emoji: 🔪
       - name: Amemori Sayo
-        focus_name: ☔️
+        short_name: ☔️
+        emoji: ☔️
       - name: Takamiya Rion
-        focus_name: 🦅
+        short_name: 🦅
+        emoji: 🦅
       - name: Asuka Hina
-        focus_name: 🐤
+        short_name: 🐤
+        emoji: 🐤
       - name: Maimoto Keisuke
-        focus_name: 👨‍🌾
+        short_name: 👨‍🌾
+        emoji: 👨‍🌾
       - name: Debidebi Debiru
-        focus_name: 🚪👿
+        short_name: 🚪👿
+        emoji: 🚪👿
       - name: Rindou Mikoto
-        focus_name: 🍶⚜️
+        short_name: 🍶⚜️
+        emoji: 🍶⚜️
       - name: Joe Rikiichi
-        focus_name: 🤡🎈
+        short_name: 🤡🎈
+        emoji: 🤡🎈
       - name: Machita Chima
-        focus_name: 🐹
+        short_name: 🐹
+        emoji: 🐹
       - name: Sakura Ritsuki
-        focus_name: 🌸🌙
+        short_name: 🌸🌙
+        emoji: 🌸🌙
       - name: Belmond Banderas
-        focus_name: 🥃
+        short_name: 🥃
+        emoji: 🥃
       - name: Yaguruma Rine
-        focus_name: 🌽
+        short_name: 🌽
+        emoji: 🌽
       - name: Yumeoi Kakeru
-        focus_name: 🎤
+        short_name: 🎤
+        emoji: 🎤
       - name: Kuroi Shiba
-        focus_name: 🐕🐾
+        short_name: 🐕🐾
+        emoji: 🐕🐾
       - name: Hassaku Yuzu
-        focus_name: 🍊
+        short_name: 🍊
+        emoji: 🍊
       - name: Nakao Azuma
-        focus_name: ☀️
+        short_name: ☀️
+        emoji: ☀️
       - name: Naruto Kogane
-        focus_name: Kogane
+        short_name: Kogane
       - name: Umiyashano Kami
-        focus_name: ⛩
+        short_name: ⛩
+        emoji: ⛩
       - name: Tsukimi Shizuku
-        focus_name: 🎑💊
+        short_name: 🎑💊
+        emoji: 🎑💊
       - name: Achikita Chinami
-        focus_name: 🍬
+        short_name: 🍬
+        emoji: 🍬
       - name: Izumo Kasumi
-        focus_name: 🦑
+        short_name: 🦑
+        emoji: 🦑
     VOIZ:
       - name: Harusaki Air
-        focus_name: 🍭
+        short_name: 🍭
+        emoji: 🍭
       - name: Naruse Naru
-        focus_name: 🎙
+        short_name: 🎙
+        emoji: 🎙
       - name: Kaminari Poaro
-        focus_name: Poaro
+        short_name: Poaro
       - name: Kurohane Kuroto
-        focus_name: Kuroto
+        short_name: Kuroto
     2019 wave:
       - name: Warabeda Meiji
-        focus_name: 🐺🍎
+        short_name: 🐺🍎
+        emoji: 🐺🍎
       - name: Gundo Mirei
-        focus_name: 🐽
+        short_name: 🐽
+        emoji: 🐽
       - name: Yuzuki Roa
-        focus_name: 🌖
+        short_name: 🌖
+        emoji: 🌖
       - name: Onomachi Haruka
-        focus_name: ♨️
+        short_name: ♨️
+        emoji: ♨️
       - name: Kataribe Tsumugu
-        focus_name: 📘🧂
+        short_name: 📘🧂
+        emoji: 📘🧂
       - name: Seto Miyako
-        focus_name: 📷💚
+        short_name: 📷💚
+        emoji: 📷💚
       - name: Otogibara Era
-        focus_name: 🏰🕛
+        short_name: 🏰🕛
+        emoji: 🏰🕛
       - name: Inui Toko
-        focus_name: 🍹
+        short_name: 🍹
+        emoji: 🍹
       - name: Ange Katrina
-        focus_name: ⚖
+        short_name: ⚖
+        emoji: ⚖
       - name: Lize Helesta
-        focus_name: 👑
+        short_name: 👑
+        emoji: 👑
       - name: Saegusa Akina
-        focus_name: 🌶
+        short_name: 🌶
+        emoji: 🌶
       - name: Aizono Manami
-        focus_name: 🦀💕
+        short_name: 🦀💕
+        emoji: 🦀💕
       - name: Suzuhara Lulu
-        focus_name: 🎨
+        short_name: 🎨
+        emoji: 🎨
       - name: Yukishiro Mahiro
-        focus_name: 🌐✨
+        short_name: 🌐✨
+        emoji: 🌐✨
       - name: Ex Albio
-        focus_name: 🛡
+        short_name: 🛡
+        emoji: 🛡
       - name: Levi Elipha
-        focus_name: 🔲
+        short_name: 🔲
+        emoji: 🔲
       - name: Hayama Marin
-        focus_name: 🍃🗻
+        short_name: 🍃🗻
+        emoji: 🍃🗻
       - name: Nui Sociere
-        focus_name: 🎃
+        short_name: 🎃
+        emoji: 🎃
       - name: Hakase Fuyuki
-        focus_name: ⚗
+        short_name: ⚗
+        emoji: ⚗
       - name: Kagami Hayato
-        focus_name: 🏢
+        short_name: 🏢
+        emoji: 🏢
       - name: Yorumi Rena
-        focus_name: 🎩🐤
+        short_name: 🎩🐤
+        emoji: 🎩🐤
       - name: Mayuzumi Kai
-        focus_name: 💻💙
+        short_name: 💻💙
+        emoji: 💻💙
       - name: Ars Almal
-        focus_name: 📕
+        short_name: 📕
+        emoji: 📕
       - name: Aiba Uiha
-        focus_name: 🍮💎
+        short_name: 🍮💎
+        emoji: 🍮💎
       - name: Amamiya Kokoro
-        focus_name: 🎐
+        short_name: 🎐
+        emoji: 🎐
       - name: Eli Conifer
-        focus_name: 🌲
+        short_name: 🌲
+        emoji: 🌲
       - name: Ratna Petit
-        focus_name: 🐻💎
+        short_name: 🐻💎
+        emoji: 🐻💎
       - name: Hayase Sou
-        focus_name: 🏃‍♀️💨
+        short_name: 🏃‍♀️💨
+        emoji: 🏃‍♀️💨
       - name: Sukoya Kana
-        focus_name: 💉💘
+        short_name: 💉💘
+        emoji: 💉💘
       - name: Shellin Burgundy
-        focus_name: 🧐
+        short_name: 🧐
+        emoji: 🧐
       - name: Fumi
-        focus_name: 🔖
+        short_name: 🔖
+        emoji: 🔖
       - name: Hoshikawa Sara
-        focus_name: 🌟
+        short_name: 🌟
+        emoji: 🌟
       - name: Yamagami Karuta
-        focus_name: 🎴
+        short_name: 🎴
+        emoji: 🎴
       - name: Matsukai Mao
-        focus_name: 💥
+        short_name: 💥
+        emoji: 💥
       - name: Emma★August
-        focus_name: ★
+        short_name: ★
+        emoji: ★
       - name: Luis Cammy
-        focus_name: ❤️🦋
+        short_name: ❤️🦋
+        emoji: ❤️🦋
       - name: Fuwa Minato
-        focus_name: 🥂✨
+        short_name: 🥂✨
+        emoji: 🥂✨
       - name: Shirayuki Tomoe
-        focus_name: 👠⛓️
+        short_name: 👠⛓️
+        emoji: 👠⛓️
       - name: Gwelu Os Gar
-        focus_name: 😎
+        short_name: 😎
+        emoji: 😎
       - name: Mashiro
-        focus_name: 🧷
+        short_name: 🧷
+        emoji: 🧷
       - name: Naraka
-        focus_name: ✖🍳
+        short_name: ✖🍳
+        emoji: ✖🍳
       - name: Kurusu Natsume
-        focus_name: 🐏🎵
+        short_name: 🐏🎵
+        emoji: 🐏🎵
       - name: Kudou Chitose
-        focus_name: 🧠
+        short_name: 🧠
+        emoji: 🧠
       - name: Shindo Raito
-        focus_name: Raito
+        short_name: Raito
     2020 wave:
       - name: Furen E Lustario
-        focus_name: 🎠
+        short_name: 🎠
+        emoji: 🎠
       - name: Melissa Kinrenka
-        focus_name: 🐝
+        short_name: 🐝
+        emoji: 🐝
       - name: Ibrahim
-        focus_name: 💧
+        short_name: 💧
+        emoji: 💧
       - name: Nagao Kei
-        focus_name: ☯️
+        short_name: ☯️
+        emoji: ☯️
       - name: Genzuki Tojiro
-        focus_name: 🎻🛵
+        short_name: 🎻🛵
+        emoji: 🎻🛵
       - name: Kaida Haru
-        focus_name: 🌞
+        short_name: 🌞
+        emoji: 🌞
       - name: Sorahoshi Kirame
-        focus_name: 🌌
+        short_name: 🌌
+        emoji: 🌌
       - name: Asahina Akane
-        focus_name: 🦖🎖
+        short_name: 🦖🎖
+        emoji: 🦖🎖
       - name: Suo Sango
-        focus_name: 💞🦩
+        short_name: 💞🦩
+        emoji: 💞🦩
       - name: Todo Kohaku
-        focus_name: 🍯
+        short_name: 🍯
+        emoji: 🍯
       - name: Kitakoji Hisui
-        focus_name: ✳
+        short_name: ✳
+        emoji: ✳
       - name: Nishizono Chigusa
-        focus_name: 🐬🌱
+        short_name: 🐬🌱
+        emoji: 🐬🌱
       - name: Kingyozaka Meiro
-        focus_name: 🩰
+        short_name: 🩰
+        emoji: 🩰
     NETWORK:
       - name: Tenkai Tukasa
-        focus_name: 🎲
+        short_name: 🎲
+        emoji: 🎲
       - name: Fairys-chan
-        focus_name: 🐦
+        short_name: 🐦
+        emoji: 🐦
 
-  Nijisanji ID:
+  ID:
     3SetBBQ:
       - name: Hana Macchia
-        focus_name: ☕
+        short_name: ☕
+        emoji: ☕
       - name: ZEA Cornelia
-        focus_name: 🔶
+        short_name: 🔶
+        emoji: 🔶
       - name: Taka Radjiman
-        focus_name: 🍖
+        short_name: 🍖
+        emoji: 🍖
     Clover McOver:
       - name: Rai Galilei
-        focus_name: 🚨
+        short_name: 🚨
+        emoji: 🚨
       - name: Riksa Dhirendra
-        focus_name: 💥
+        short_name: 💥
+        emoji: 💥
       - name: Amicia Michella
-        focus_name: 🐧
+        short_name: 🐧
+        emoji: 🐧
       - name: Miyu Ottavia
-        focus_name: 🦦
+        short_name: 🦦
+        emoji: 🦦
     LAN_NEE3S:
       - name: Azura Cecillia
-        focus_name: 👽
+        short_name: 👽
+        emoji: 👽
       - name: Layla Alstroemeria
-        focus_name: 🕰️🌺
+        short_name: 🕰️🌺
+        emoji: 🕰️🌺
       - name: Nara Haramaung
-        focus_name: 🐯
+        short_name: 🐯
+        emoji: 🐯
     3FicLite:
       - name: Etna Crimson
-        focus_name: 🌋🍔
+        short_name: 🌋🍔
+        emoji: 🌋🍔
       - name: Bonnivier Pranaja
-        focus_name: 🎣
+        short_name: 🎣
+        emoji: 🎣
       - name: Siska Leontyne
-        focus_name: 🔦🦁
+        short_name: 🔦🦁
+        emoji: 🔦🦁
     53Renade:
       - name: Nagisa Arcinia
-        focus_name: 🐥🍭
+        short_name: 🐥🍭
+        emoji: 🐥🍭
       - name: Derem Kado
-        focus_name: 🎁
+        short_name: 🎁
+        emoji: 🎁
       - name: Reza Avanluna
-        focus_name: 🌒🎸☁
+        short_name: 🌒🎸☁
+        emoji: 🌒🎸☁
 
-  Nijisanji IN:
+  IN:
     - name: Aadya
-      focus_name: 🌸
+      short_name: 🌸
+      emoji: 🌸
     - name: Noor
-      focus_name: 💎♦️
+      short_name: 💎♦️
+      emoji: 💎♦️
     - name: Vihaan
-      focus_name: Vihaan
+      short_name: Vihaan
 
 
-  Nijisanji KR:
+  KR:
     1st wave:
       - name: Shin Yuya
-        focus_name: 🌛🌱
+        short_name: 🌛🌱
+        emoji: 🌛🌱
       - name: Min Suha
-        focus_name: 🌊
+        short_name: 🌊
+        emoji: 🌊
       - name: Yu Ruri
-        focus_name: 🎀🧸
+        short_name: 🎀🧸
+        emoji: 🎀🧸
       - name: Wiffy
-        focus_name: 📶
+        short_name: 📶
+        emoji: 📶
     541 E&C:
       - name: Gaon
-        focus_name: 👔
+        short_name: 👔
+        emoji: 👔
       - name: Han Chiho
-        focus_name: 🦋
+        short_name: 🦋
+        emoji: 🦋
       - name: Moarin
-        focus_name: 💕
+        short_name: 💕
+        emoji: 💕
       - name: Kaen
-        focus_name: 🦴🔔
+        short_name: 🦴🔔
+        emoji: 🦴🔔
       - name: Lorou
-        focus_name: 🎵
+        short_name: 🎵
+        emoji: 🎵
       - name: Hakuren
-        focus_name: ☁️
+        short_name: ☁️
+        emoji: ☁️
     2nd wave:
       - name: So Nagi
-        focus_name: 🌧
+        short_name: 🌧
+        emoji: 🌧
       - name: Chae Ara
-        focus_name: 🌹💛
+        short_name: 🌹💛
+        emoji: 🌹💛
       - name: Lee Siu
-        focus_name: 🐾
+        short_name: 🐾
+        emoji: 🐾
     3rd wave:
       - name: Nun Bora
-        focus_name: ❄️💜
+        short_name: ❄️💜
+        emoji: ❄️💜
       - name: Akira Ray
-        focus_name: 😸
+        short_name: 😸
+        emoji: 😸
       - name: Lee Roha
-        focus_name: 🔰
+        short_name: 🔰
+        emoji: 🔰
     4th wave:
       - name: Yang Nari
-        focus_name: 📌
+        short_name: 📌
+        emoji: 📌
       - name: Ryu Hari
-        focus_name: 👁‍🗨
+        short_name: 👁‍🗨
+        emoji: 👁‍🗨
       - name: Shin Kiru
-        focus_name: 🌫
+        short_name: 🌫
+        emoji: 🌫
       - name: Oh Jiyu
-        focus_name: ⚜️
+        short_name: ⚜️
+        emoji: ⚜️
 
 VOMS:
   - name: Amano Pikamee
-    focus_name: ⚡
+    short_name: ⚡
+    emoji: ⚡
   - name: Hikasa Tomoshika
-    focus_name: 🦌
+    short_name: 🦌
+    emoji: 🦌
   - name: Jitomi Monoe
-    focus_name: 🧲
+    short_name: 🧲
+    emoji: 🧲
 
 Independent:
   - name: Kagura Mea
-    focus_name: Mea
+    short_name: Mea
   - name: Shigure Ui
-    focus_name: Ui
+    short_name: Ui

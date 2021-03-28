@@ -27,11 +27,16 @@
                 🎬
             </div>
             <div class="flex-1"/>
-            <div v-if="mainFocus"
+            <div v-if="mainFocusType === 'App\\VTuber'"
                  class="pill ml-6 md:ml-8 cursor-default"
-                 v-tippy="{content: mainFocus.name, arrow : true}"
+                 v-tippy="{content: mainFocusTooltip, arrow: true}"
             >
-                {{ mainFocus.focusName }}
+                {{ mainFocus.shortName }}
+            </div>
+            <div v-else-if="mainFocusType === 'App\\Category'"
+                 class="pill ml-6 md:ml-8 cursor-default"
+            >
+                {{ mainFocus.fullName }}
             </div>
         </div>
     </div>
@@ -64,8 +69,14 @@
         return _.find(type.value, { 'id': props.mainFocusId })
       })
 
+      const mainFocusTooltip = computed(() => {
+        if (mainFocus.value.emoji === null) return mainFocus.value.name
+        return mainFocus.value.emoji + ' ' + mainFocus.value.name
+      })
+
       return {
         mainFocus,
+        mainFocusTooltip,
         bgColorClass: bgcolorClassForTier(props.tier),
         url,
         format

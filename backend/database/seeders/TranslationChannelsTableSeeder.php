@@ -950,7 +950,7 @@ class TranslationChannelsTableSeeder extends Seeder
                         'tier' => null,
                         'good_editor' => null,
                         'main_focus_type' => 'App\\VTuber',
-                        'main_focus_id' => 223,
+                        'main_focus_id' => 41,
                         'created_at' => '2020-09-13 10:06:45',
                         'updated_at' => '2021-02-24 21:51:28',
                     ],

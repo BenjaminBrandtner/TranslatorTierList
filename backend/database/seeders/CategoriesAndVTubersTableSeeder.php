@@ -25,7 +25,9 @@ class CategoriesAndVTubersTableSeeder extends Seeder
     private function createCategory(string $name, Category $parent = null): Category
     {
         //print("creating Category $name, appending to " . optional($parent)->name . "\n");
-        return Category::create(['name' => $name], $parent);
+        $fullName = $parent ? "$parent->full_name $name" : $name;
+
+        return Category::create(['name' => $name, 'full_name' => $fullName], $parent);
     }
 
     private function createVTuber(array $attributes, Category $parent): void
@@ -38,8 +40,7 @@ class CategoriesAndVTubersTableSeeder extends Seeder
     {
         if (Arr::isAssoc($data)) { //categories
             collect($data)->each(
-                function ($data, $key) use ($lastNode)
-                {
+                function ($data, $key) use ($lastNode) {
                     $newNode = $this->createCategory($key, $lastNode);
                     if ($data === null) return;
                     $this->createCategoryOrVTubers($data, $newNode);

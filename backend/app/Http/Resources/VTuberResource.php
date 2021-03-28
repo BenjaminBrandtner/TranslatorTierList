@@ -17,7 +17,8 @@ class VTuberResource extends JsonResource
         return [
             'id'         => $this->id,
             'name'       => $this->name,
-            'focusName'  => $this->focus_name,
+            'shortName'  => $this->short_name,
+            'emoji'      => $this->emoji,
             'categoryId' => $this->category_id,
         ];
     }

@@ -15,11 +15,11 @@ class CreateVTubersTable extends Migration
     {
         Schema::create(
             'v_tubers',
-            function (Blueprint $table)
-            {
+            function (Blueprint $table) {
                 $table->id();
                 $table->string('name');
-                $table->string('focus_name');
+                $table->string('short_name');
+                $table->string('emoji')->nullable();
                 $table->foreignId('category_id')->nullable();
                 $table->timestamps();
             }
