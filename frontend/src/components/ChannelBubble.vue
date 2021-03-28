@@ -27,10 +27,12 @@
                 🎬
             </div>
             <div class="flex-1"/>
-            <div v-if="mainFocus" class="pill ml-6 md:ml-8 cursor-default">
+            <div v-if="mainFocus"
+                 class="pill ml-6 md:ml-8 cursor-default"
+                 v-tippy="{content: mainFocus.name, arrow : true}"
+            >
                 {{ mainFocus.focusName }}
             </div>
-            <!-- Todo: Tooltip -->
         </div>
     </div>
 </template>

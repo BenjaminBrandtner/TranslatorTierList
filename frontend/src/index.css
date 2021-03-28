@@ -6,6 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto:wght@300;400&display=swap&family=Libre+Baskerville:wght@700&display=swap');
 
+@import 'overrides.css';
+
 :root {
     --s-tier: #01B0F1;
     --a-tier: #00AF50;
